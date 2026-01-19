@@ -33,14 +33,14 @@ export default async function Home() {
                 Get Started Free
               </Button>
             </SignUpButton>
-            <Button size="lg" variant="outline" className="text-base">
-              View Demo
+            <Button size="lg" variant="outline" className="text-base" asChild>
+              <a href="#features">View Features</a>
             </Button>
           </div>
         </section>
 
         {/* Features Grid */}
-        <section className="mb-24 md:mb-32">
+        <section id="features" className="mb-24 md:mb-32">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
             Powerful Features
           </h2>
@@ -172,7 +172,7 @@ export default async function Home() {
       {/* Footer */}
       <footer className="border-t mt-24 py-8">
         <div className="container mx-auto px-4 text-center text-muted-foreground text-sm">
-          <p>© 2026 Link Shortener. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Link Shortener. All rights reserved.</p>
         </div>
       </footer>
     </div>
