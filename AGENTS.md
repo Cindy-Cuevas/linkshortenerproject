@@ -48,6 +48,7 @@ For detailed guidelines on specific topics, refer to the modular documentation i
 - Use Server Actions for mutations
 - Implement proper loading and error states
 - Follow the file-based routing conventions
+- **🚨 NEVER use `middleware.ts`** - This is deprecated in Next.js 16. Use `proxy.ts` instead for request/response intercepting and routing logic
 
 #### React 19
 - Utilize the latest React features (Actions, Transitions, etc.)
